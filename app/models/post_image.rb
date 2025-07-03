@@ -5,6 +5,7 @@ class PostImage < ApplicationRecord
   validates :caption, presence: true
   
   belongs_to :user
+  has_many :post_comments, dependent: :destroy
 
   def get_image
     unless image.attached?
