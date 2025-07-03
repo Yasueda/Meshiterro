@@ -1,8 +1,8 @@
 class PostImage < ApplicationRecord
   has_one_attached :image
 
-  validates :title, presence: true
-  validates :body, presence: true
+  validates :shop_name, presence: true
+  validates :caption, presence: true
   
   belongs_to :user
 
