@@ -3,6 +3,7 @@ class PostImage < ApplicationRecord
 
   validates :shop_name, presence: true
   validates :caption, presence: true
+  validates :image, presence: true
   
   belongs_to :user
   has_many :post_comments, dependent: :destroy
